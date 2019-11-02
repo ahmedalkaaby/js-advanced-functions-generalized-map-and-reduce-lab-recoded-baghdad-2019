@@ -9,12 +9,12 @@ let map= function(arr,callback){
 
 
 let reduce = function(arr,callback,startpoint=0){
-  let temp;
+  let tem;
   if(startpoint){
-    temp=startpoint
+    tem=startpoint
   }
   else
-  {temp=arr[0]}
+  {tem=arr[0]}
   let i;
   if(startpoint){
     i=0;
@@ -23,7 +23,7 @@ let reduce = function(arr,callback,startpoint=0){
     i=1;
   }
   for(;i<arr.length;i++){
-    temp=callback(temp,arr[i])
+    tem=callback(temp,arr[i])
   }
-  return temp;
+  return tem;
 }
