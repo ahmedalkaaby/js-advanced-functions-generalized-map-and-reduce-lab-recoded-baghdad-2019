@@ -23,7 +23,7 @@ let reduce = function(arr,callback,startpoint=0){
     i=1;
   }
   for(;i<arr.length;i++){
-    tem=callback(temp,arr[i])
+    tem=callback(tem,arr[i])
   }
   return tem;
 }
